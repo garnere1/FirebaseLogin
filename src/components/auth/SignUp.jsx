@@ -33,13 +33,17 @@ const SignUp = () => {
     }
   }
 
+  const handleAuth = () => {
+    navigate("/");
+  }
+
   const signUp = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         sessionStorage.setItem("authorized", "true")
         sendEmailVerification(auth.currentUser)
-        navigate("/");
+        handleAuth()
       })
       .catch((error) => {
         console.log(error.code);
