@@ -62,7 +62,7 @@ Start the server
 
 ## Screenshots
 
-<img src="https://githubreadmepics.s3.us-east-2.amazonaws.com/FirebaseLogin.png"  width="200" height="400">
-<img src="https://githubreadmepics.s3.us-east-2.amazonaws.com/FirebaseSignUp.png"  width="200" height="400">
-<img src="https://githubreadmepics.s3.us-east-2.amazonaws.com/FirebaseForgotPassword.png"  width="200" height="400">
+<img src="https://githubreadmepics.s3.us-east-2.amazonaws.com/FirebaseLogin.png"  width="400" height="400">
+<img src="https://githubreadmepics.s3.us-east-2.amazonaws.com/FirebaseSignUp.png"  width="400" height="400">
+<img src="https://githubreadmepics.s3.us-east-2.amazonaws.com/FirebaseForgotPassword.png"  width="400" height="400">
 
