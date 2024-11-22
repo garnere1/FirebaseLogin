@@ -10,13 +10,17 @@ const SignIn = () => {
   const [showAlert, setShowAlert] = useState(false);
   const navigate = useNavigate();
 
+  const handleAuth = () => {
+    navigate("/");
+  }
+
   const signIn = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log("Sign in successful")
         sessionStorage.setItem("authorized", "true")
-        navigate("/");
+        handleAuth()
       })
       .catch((error) => {
         console.log(error);
@@ -32,10 +36,9 @@ const SignIn = () => {
     <div className="login">
       <form onSubmit={signIn}>
         <label htmlFor="chk" aria-hidden="true">Login</label>
-        <Alert show={showAlert} variant="danger">
+        <Alert show={showAlert} style={{ fontWeight: 'bold', color: 'red'}}>
           <p>
-            The username or password you have entered is incorrect. If you have forgotten your password, click the 
-            "forgot password" button.
+            The username or password you have entered is incorrect.
           </p>
         </Alert>
         <input

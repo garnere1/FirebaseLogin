@@ -4,7 +4,6 @@ function Home() {
     return (
       <div className="login-page">
         <AuthDetails />
-        <p>Hello</p>
       </div>
     );
   }
